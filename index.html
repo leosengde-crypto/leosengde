@@ -1,332 +1,141 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>守护绿色地球</title>
+  <title>Respect Women · Support Equality</title>
   <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    body {
-      font-family: "Microsoft YaHei", Arial, sans-serif;
-      line-height: 1.6;
-      color: #1f2933;
-      background: #f4fbf6;
-    }
-
-    header {
-      min-height: 100vh;
-      background: linear-gradient(rgba(20, 83, 45, 0.72), rgba(20, 83, 45, 0.72)),
-        url("https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1600&q=80") center/cover;
-      color: white;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-      padding: 30px;
-    }
-
-    nav {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      padding: 18px 8%;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      background: rgba(255, 255, 255, 0.92);
-      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
-      z-index: 100;
-    }
-
-    nav .logo {
-      font-size: 22px;
-      font-weight: bold;
-      color: #15803d;
-    }
-
-    nav a {
-      color: #166534;
-      text-decoration: none;
-      margin-left: 24px;
-      font-weight: 600;
-    }
-
-    nav a:hover {
-      color: #22c55e;
-    }
-
-    header h1 {
-      font-size: 56px;
-      margin-bottom: 20px;
-      letter-spacing: 2px;
-    }
-
-    header p {
-      max-width: 760px;
-      font-size: 20px;
-      margin-bottom: 32px;
-    }
-
-    .btn {
-      display: inline-block;
-      padding: 14px 30px;
-      background: #22c55e;
-      color: white;
-      border-radius: 999px;
-      text-decoration: none;
-      font-weight: bold;
-      transition: 0.3s;
-    }
-
-    .btn:hover {
-      background: #16a34a;
-      transform: translateY(-3px);
-    }
-
-    section {
-      padding: 80px 8%;
-    }
-
-    .section-title {
-      text-align: center;
-      font-size: 36px;
-      color: #14532d;
-      margin-bottom: 18px;
-    }
-
-    .section-desc {
-      text-align: center;
-      max-width: 760px;
-      margin: 0 auto 50px;
-      color: #52616b;
-      font-size: 17px;
-    }
-
-    .cards {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-      gap: 24px;
-    }
-
-    .card {
-      background: white;
-      border-radius: 20px;
-      padding: 30px;
-      box-shadow: 0 10px 30px rgba(22, 101, 52, 0.1);
-      transition: 0.3s;
-    }
-
-    .card:hover {
-      transform: translateY(-8px);
-    }
-
-    .card .icon {
-      font-size: 44px;
-      margin-bottom: 18px;
-    }
-
-    .card h3 {
-      color: #166534;
-      margin-bottom: 12px;
-      font-size: 22px;
-    }
-
-    .stats {
-      background: linear-gradient(135deg, #dcfce7, #bbf7d0);
-    }
-
-    .stat-box {
-      text-align: center;
-      background: rgba(255, 255, 255, 0.78);
-      border-radius: 18px;
-      padding: 32px 20px;
-    }
-
-    .stat-box strong {
-      display: block;
-      font-size: 42px;
-      color: #15803d;
-      margin-bottom: 8px;
-    }
-
-    .actions {
-      background: white;
-    }
-
-    .action-list {
-      max-width: 860px;
-      margin: auto;
-      display: grid;
-      gap: 18px;
-    }
-
-    .action-item {
-      display: flex;
-      align-items: flex-start;
-      gap: 16px;
-      padding: 22px;
-      border-left: 6px solid #22c55e;
-      background: #f0fdf4;
-      border-radius: 14px;
-    }
-
-    .action-item span {
-      font-size: 28px;
-    }
-
-    .banner {
-      background: linear-gradient(rgba(22, 101, 52, 0.82), rgba(22, 101, 52, 0.82)),
-        url("https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=1600&q=80") center/cover;
-      color: white;
-      text-align: center;
-      border-radius: 28px;
-      padding: 70px 28px;
-    }
-
-    .banner h2 {
-      font-size: 38px;
-      margin-bottom: 16px;
-    }
-
-    footer {
-      background: #14532d;
-      color: #d1fae5;
-      text-align: center;
-      padding: 28px;
-      font-size: 14px;
-    }
-
-    @media (max-width: 768px) {
-      nav {
-        padding: 14px 5%;
-      }
-
-      nav div:last-child {
-        display: none;
-      }
-
-      header h1 {
-        font-size: 38px;
-      }
-
-      header p {
-        font-size: 17px;
-      }
-
-      .section-title {
-        font-size: 28px;
-      }
-    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: Arial, sans-serif; color: #2d2433; background: #fff7fb; line-height: 1.7; }
+    nav { position: fixed; top: 0; left: 0; width: 100%; padding: 18px 8%; display: flex; justify-content: space-between; align-items: center; background: rgba(255,255,255,.92); box-shadow: 0 6px 24px rgba(160,72,120,.12); z-index: 99; }
+    .logo { font-size: 22px; font-weight: 800; color: #be185d; }
+    nav a { margin-left: 24px; color: #831843; text-decoration: none; font-weight: 600; }
+    nav a:hover { color: #ec4899; }
+    .hero { min-height: 100vh; padding: 120px 8% 80px; display: grid; grid-template-columns: 1.1fr .9fr; align-items: center; gap: 50px; background: radial-gradient(circle at top left, #fbcfe8 0, transparent 34%), linear-gradient(135deg, #fff1f7, #fdf2ff); }
+    .hero h1 { font-size: 56px; line-height: 1.15; color: #831843; margin-bottom: 24px; }
+    .hero p { font-size: 20px; color: #5b4054; max-width: 720px; margin-bottom: 32px; }
+    .btn { display: inline-block; padding: 14px 30px; border-radius: 999px; color: white; background: linear-gradient(135deg, #db2777, #9333ea); text-decoration: none; font-weight: 700; box-shadow: 0 12px 30px rgba(219,39,119,.25); transition: .3s; }
+    .btn:hover { transform: translateY(-4px); box-shadow: 0 16px 36px rgba(147,51,234,.28); }
+    .hero-card { background: rgba(255,255,255,.8); border: 1px solid rgba(244,114,182,.22); border-radius: 30px; padding: 36px; box-shadow: 0 20px 60px rgba(131,24,67,.12); }
+    .hero-card h2 { color: #be185d; margin-bottom: 18px; font-size: 28px; }
+    .hero-card ul { list-style: none; }
+    .hero-card li { padding: 14px 0; border-bottom: 1px solid #fce7f3; }
+    .hero-card li:last-child { border-bottom: none; }
+    section { padding: 82px 8%; }
+    .section-title { text-align: center; font-size: 38px; color: #831843; margin-bottom: 16px; }
+    .section-desc { text-align: center; max-width: 780px; margin: 0 auto 48px; color: #6b5264; font-size: 17px; }
+    .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 24px; }
+    .card { background: white; border-radius: 24px; padding: 30px; box-shadow: 0 12px 36px rgba(131,24,67,.09); border: 1px solid #fce7f3; transition: .3s; }
+    .card:hover { transform: translateY(-8px); }
+    .icon { font-size: 44px; margin-bottom: 18px; }
+    .card h3 { color: #be185d; font-size: 22px; margin-bottom: 12px; }
+    .values { background: #fdf2f8; }
+    .quote { max-width: 960px; margin: auto; background: linear-gradient(135deg, #be185d, #7e22ce); color: white; padding: 56px; border-radius: 32px; text-align: center; box-shadow: 0 20px 50px rgba(126,34,206,.22); }
+    .quote h2 { font-size: 34px; margin-bottom: 16px; }
+    .actions { background: white; }
+    .action-list { max-width: 900px; margin: auto; display: grid; gap: 18px; }
+    .action-item { display: flex; gap: 18px; align-items: flex-start; padding: 24px; border-radius: 18px; background: #fff7fb; border-left: 6px solid #db2777; }
+    .action-item span { font-size: 30px; }
+    .action-item h3 { color: #9d174d; margin-bottom: 6px; }
+    footer { background: #831843; color: #fce7f3; text-align: center; padding: 30px; font-size: 14px; }
+    @media (max-width: 860px) { .hero { grid-template-columns: 1fr; } .hero h1 { font-size: 40px; } nav div:last-child { display: none; } }
   </style>
 </head>
 <body>
   <nav>
-    <div class="logo">🌱 绿色地球</div>
+    <div class="logo">♀ Voice for Equality</div>
     <div>
-      <a href="#about">环保意义</a>
-      <a href="#stats">环境数据</a>
-      <a href="#actions">立即行动</a>
+      <a href="#rights">Core Ideas</a>
+      <a href="#values">Shared Values</a>
+      <a href="#actions">Take Action</a>
     </div>
   </nav>
 
-  <header>
-    <h1>守护环境，从现在开始</h1>
-    <p>每一次节约用水、每一次低碳出行、每一次减少浪费，都是在为地球争取更好的未来。</p>
-    <a class="btn" href="#actions">查看环保行动</a>
-  </header>
+  <main>
+    <section class="hero">
+      <div>
+        <h1>Respect Women. Support Equality and Inclusion.</h1>
+        <p>Real progress means creating a world where everyone can speak, choose, work, learn, and live with dignity, safety, and equal opportunity.</p>
+        <a class="btn" href="#actions">Start with Everyday Action</a>
+      </div>
+      <div class="hero-card">
+        <h2>We Stand For</h2>
+        <ul>
+          <li>Respecting women’s choices, voices, and boundaries</li>
+          <li>Rejecting gender discrimination, harassment, and harmful stereotypes</li>
+          <li>Supporting equal education, equal opportunity, and equal pay</li>
+          <li>Encouraging respectful, fact-based, and inclusive public dialogue</li>
+        </ul>
+      </div>
+    </section>
 
-  <section id="about">
-    <h2 class="section-title">为什么要保护环境？</h2>
-    <p class="section-desc">环境保护不仅关乎自然生态，也关系到人类健康、城市发展和下一代的生活质量。</p>
-    <div class="cards">
-      <div class="card">
-        <div class="icon">🌳</div>
-        <h3>保护森林</h3>
-        <p>森林能够吸收二氧化碳、释放氧气，并为无数动植物提供栖息地。</p>
-      </div>
-      <div class="card">
-        <div class="icon">💧</div>
-        <h3>节约水资源</h3>
-        <p>淡水资源有限，减少浪费可以帮助更多地区获得稳定、安全的用水。</p>
-      </div>
-      <div class="card">
-        <div class="icon">♻️</div>
-        <h3>减少污染</h3>
-        <p>减少塑料、废气和垃圾排放，可以改善空气质量和生态环境。</p>
-      </div>
-    </div>
-  </section>
-
-  <section id="stats" class="stats">
-    <h2 class="section-title">值得关注的环境数据</h2>
-    <p class="section-desc">这些数字提醒我们，环保不是口号，而是每个人都可以参与的实际行动。</p>
-    <div class="cards">
-      <div class="stat-box">
-        <strong>1</strong>
-        <p>少用一个一次性塑料袋，就是减少一份白色污染。</p>
-      </div>
-      <div class="stat-box">
-        <strong>5</strong>
-        <p>每天少开空调几小时，可以明显降低家庭能源消耗。</p>
-      </div>
-      <div class="stat-box">
-        <strong>10</strong>
-        <p>步行或骑行十分钟，既低碳又有益健康。</p>
-      </div>
-    </div>
-  </section>
-
-  <section id="actions" class="actions">
-    <h2 class="section-title">我们可以怎么做？</h2>
-    <p class="section-desc">环保并不遥远，它可以从日常生活中的小习惯开始。</p>
-    <div class="action-list">
-      <div class="action-item">
-        <span>🚲</span>
-        <div>
-          <h3>选择低碳出行</h3>
-          <p>短途尽量步行、骑车或乘坐公共交通，减少汽车尾气排放。</p>
+    <section id="rights">
+      <h2 class="section-title">Core Ideas</h2>
+      <p class="section-desc">Feminism is not about division. It is about dignity, fairness, safety, and the freedom for everyone to reach their full potential.</p>
+      <div class="cards">
+        <div class="card">
+          <div class="icon">🗣️</div>
+          <h3>Listen to Women’s Voices</h3>
+          <p>Take women’s experiences seriously in families, schools, workplaces, and public spaces.</p>
+        </div>
+        <div class="card">
+          <div class="icon">⚖️</div>
+          <h3>Promote Fair Opportunity</h3>
+          <p>Reduce gender-based barriers and let ability, effort, and contribution define success.</p>
+        </div>
+        <div class="card">
+          <div class="icon">🛡️</div>
+          <h3>Reject Harassment and Violence</h3>
+          <p>Support safe boundaries, accountability, and environments where people can speak up without fear.</p>
         </div>
       </div>
-      <div class="action-item">
-        <span>🔌</span>
-        <div>
-          <h3>随手关闭电源</h3>
-          <p>离开房间时关闭灯光、空调和不使用的电器，减少能源浪费。</p>
-        </div>
-      </div>
-      <div class="action-item">
-        <span>🛍️</span>
-        <div>
-          <h3>减少一次性用品</h3>
-          <p>自带水杯、餐具和购物袋，减少塑料制品使用。</p>
-        </div>
-      </div>
-      <div class="action-item">
-        <span>🗑️</span>
-        <div>
-          <h3>做好垃圾分类</h3>
-          <p>将可回收物、有害垃圾、厨余垃圾和其他垃圾分开处理。</p>
-        </div>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <section>
-    <div class="banner">
-      <h2>地球不是资源仓库，而是共同家园</h2>
-      <p>从今天开始，用一个小改变，换一个更绿色的未来。</p>
-    </div>
-  </section>
+    <section id="values" class="values">
+      <div class="quote">
+        <h2>Equality is not a privilege. It is basic respect.</h2>
+        <p>When women have more safety, choice, and opportunity, society becomes stronger, fairer, and more humane.</p>
+      </div>
+    </section>
+
+    <section id="actions" class="actions">
+      <h2 class="section-title">What Can You Do?</h2>
+      <p class="section-desc">Supporting gender equality begins with the words we use, the choices we make, and the standards we uphold every day.</p>
+      <div class="action-list">
+        <div class="action-item">
+          <span>💬</span>
+          <div>
+            <h3>Avoid Gender-Based Insults</h3>
+            <p>Do not use language that demeans, objectifies, or shames women. Disagree with respect.</p>
+          </div>
+        </div>
+        <div class="action-item">
+          <span>🤝</span>
+          <div>
+            <h3>Support Equal Opportunity</h3>
+            <p>In education, hiring, promotion, and collaboration, focus on skills, character, and contribution.</p>
+          </div>
+        </div>
+        <div class="action-item">
+          <span>👂</span>
+          <div>
+            <h3>Listen Before Dismissing</h3>
+            <p>When someone shares an experience of discrimination or harassment, respond with care and attention.</p>
+          </div>
+        </div>
+        <div class="action-item">
+          <span>🌈</span>
+          <div>
+            <h3>Build Inclusive Spaces</h3>
+            <p>Create environments where people of all genders and backgrounds can feel safe, respected, and heard.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
 
   <footer>
-    © 2026 绿色地球环保主题页 | Protect Our Planet
+    © 2026 Voice for Equality | Respect · Equality · Inclusion · Dignity
   </footer>
 </body>
 </html>
